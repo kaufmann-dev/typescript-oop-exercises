@@ -14,8 +14,10 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var AEmployee = /** @class */ (function () {
     function AEmployee(firstName, lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        if (firstName !== undefined) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
     }
     return AEmployee;
 }());
@@ -29,3 +31,4 @@ var Physician = /** @class */ (function (_super) {
 // -- Program --
 var p = new Physician("Franz", "Kammer");
 console.log(p);
+console.log(p.firstName + " " + p.lastName);

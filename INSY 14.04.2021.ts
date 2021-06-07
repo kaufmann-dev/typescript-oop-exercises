@@ -9,8 +9,11 @@ class AEmployee {
     constructor()
     constructor(firstName: string, lastName: string)
     constructor(firstName?: string, lastName?: string) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        if(firstName !== undefined) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
     }
 }
 
@@ -22,3 +25,4 @@ class Physician extends AEmployee{
 let p: Physician = new Physician("Franz","Kammer");
 
 console.log(p);
+console.log(p.firstName + " " + p.lastName);
