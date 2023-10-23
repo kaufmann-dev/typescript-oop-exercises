@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    // "target": "esnext",
+    "target": "ES2020",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  // "strict": true                      /* Enable all strict type-checking options. */
+  "noImplicitAny": true,                 /* Raise error on expressions and declarations with an implied 'any' type. */
+  "noImplicitThis": true,                /* Raise error on 'this' expressions with an implied 'any' type. */
+  "alwaysStrict": true,                  /* Parse in strict mode and emit "use strict" for each source file. */
+  "strictBindCallApply": true,           /* Überprüft, ob die Argumente für die Methoden "bind", "call" und "apply" mit der ursprünglichen Funktion übereinstimmen. */
+  "strictNullChecks": true,              /* Enable strict null checks. */
+  "strictFunctionTypes": true,           /*  Überprüft beim Zuweisen von Funktionen, ob die Parameter und die Rückgabewerte subtypkompatibel sind */
+  "strictPropertyInitialization": true   /* Suchen Sie nach Klasseneigenschaften, die im Konstruktor deklariert, aber nicht festgelegt sind. */
+}
